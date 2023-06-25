@@ -21,14 +21,14 @@ var AuthToken;
     };
 
     http.Response response = await http.post(
-        Uri.parse("https://server.darjee.one/api/user/login"),
+        Uri.parse('https://server.darjee.one/api/user/login'),
         headers: headers,
         body: jsonEncode(body));
     if(response.statusCode==200){
       var jsonData=jsonDecode(response.body);
       print(jsonData);
     }else{
-      print('fail');
+      print('fails.......');
 
     }
   }catch(e){
